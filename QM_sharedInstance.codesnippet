@@ -20,6 +20,16 @@
 
 + (id)allocWithZone:(struct _NSZone *)zone{
     return [self sharedInstance];
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    return [&lt;#class name#&gt; sharedInstance];
+}
+
+- (id)mutableCopyWithZone:(NSZone *)zone
+{
+    return [&lt;#class name#&gt; sharedInstance];
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>26D03BCD-735E-4CFD-8E48-3DBA65BC70A1</string>
